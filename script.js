@@ -1,10 +1,9 @@
-// You can add JavaScript functionality later, such as scroll effects, interactive form, etc.
-// Here's a sample scroll smooth effect
+// Smooth scrolling for internal links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+    document.querySelector(this.getAttribute('href')).scrollIntoView({
+      behavior: 'smooth'
     });
+  });
 });
